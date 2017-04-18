@@ -14,13 +14,12 @@ printf '\n\n Installing dependencies \n\n'
 #libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev\
 #libxvidcore-dev x264 v4l-utils ffmpeg cmake qt5-default checkinstall
 
-chmod 777 ~/Downloads/Shells/ffmpeg.sh;
-
 #Clear directory for ffmpeg.sh that might be in directory a priori
 
 rm ffmpeg.sh;
 
-cp ~/Downloads/Shells/ffmpeg.sh .;
+wget -nv https://raw.githubusercontent.com/lakehanne/Shells/master/ffmpeg.sh?token=AIChJJX9q77jlZo3o4TRCNfdgJ-LJijvks5Y_7-kwA%3D%3D
+chmod 777 ffmpeg.sh;
 
 sh ffmpeg.sh;
 
